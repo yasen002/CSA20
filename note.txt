@@ -1,0 +1,11 @@
+2/18/2020
+code signal 
+hack and rack
+
+
+# structs
+
+c++ never has empty values;
+
+constructor
+oop
