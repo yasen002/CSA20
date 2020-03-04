@@ -9,3 +9,45 @@ c++ never has empty values;
 
 constructor
 oop
+
+when you create any array, it is contigus in mamory.
+
+dynamic var will stay after the scope ended. 
+
+    int *ptr;
+   int nums[3] = {1,2,3};
+   
+   cout<<&nums; //gives adress of nums[0]
+   cout<<nums;  //gives adress of nums[0]
+   
+//   arrays is not pointer.
+//   [] dereferences things
+   
+//   in c++ ptr + nuber it understands that mover the pointer to next #nubmer of data. 
+   
+Nerd cary;
+Nerd *ptr;
+ptr = &cary
+
+(*ptr).somevar = 140; 
+ptr->somevar = 140;
+    return 0;
+    
+dynamic variable will not clean up itself after the ending of scope. 
+class objects of the same type can touch the private variable of other variables. 
+what is copy construction?
+
+ClassName b = a;   '=' is not an assingment opentrator because ClassName will otomaticly call constructor. this is just a easy way to write: ClassName b(a)
+what is 'shallow copy' mean?
+c++ will give you a copy constructor if you don't have one. 
+why do we need out own copy constructor? 
+if you have all scaler var, shallow copy is a good solution 
+but if you have a pointer points to a dynamicly alocated memory you are in trouble. 
+
+ClassName a;
+ClassName b = a; //this is copy cosntructor
+ClassName h;
+h = a; //this is assignment operator;  this gives you a shallow copy.; 
+an object is only constructed once 
+return type of a assingment operator is a reference to the same object. 
+'this' is an address to the current variables.
